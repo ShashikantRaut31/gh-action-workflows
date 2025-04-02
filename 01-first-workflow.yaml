@@ -1,0 +1,17 @@
+name: 01-first-workflow
+
+on: push
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+     name: Say Hello
+     run: echo "Hi guys, its my first workflow, but definitely its not last as I will continuosly working on this I will make new workflows as well"
+
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+     name: Failed step
+     run : |
+      exit 1

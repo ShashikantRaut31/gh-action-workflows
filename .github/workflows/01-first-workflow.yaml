@@ -6,12 +6,12 @@ jobs:
   echo-hello:
     runs-on: ubuntu-latest
     steps:
-     name: Say Hello
-     run: echo "Hi guys, its my first workflow, but definitely its not last as I will continuosly working on this I will make new workflows as well"
+      - name: Say Hello
+        run: echo "Hi guys, its my first workflow, but definitely its not last as I will continuosly working on this I will make new workflows as well"
 
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
-     name: Failed step
-     run : |
-      exit 1
+      - name: Failed step
+        run : |
+          exit 1

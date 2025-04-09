@@ -1,4 +1,4 @@
-name : 02-Second-Event
+name: 02-Second-Event
 
 on: push
     pull_request

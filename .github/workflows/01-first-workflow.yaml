@@ -1,0 +1,16 @@
+name: 01-first-workflow
+
+on: workflow_dispatch
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hi guys, its my first workflow, but definitely its not last as I will continuosly working on this I will make new workflows as well"
+
+  echo-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say good bye
+        run : echo "See you guys, will meet to soon till then BYE BYE"
